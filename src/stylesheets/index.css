@@ -1,0 +1,256 @@
+@charset "UTF-8";
+/************************常用变量********************************/
+/****************************公共样式***********************/
+/* line 8, ../sass/index.scss */
+.ad, .top, #header, .section_1, .section_2, .section_3, .section_4, .section_5, .section_6, .section_7, .section_8, .section_9, .section_10, #footer {
+  width: 100%;
+  height: 80px;
+  margin: 0 auto;
+}
+
+/****************************顶部广告样式***********************/
+/* line 15, ../sass/index.scss */
+.ad {
+  background: #c21a27;
+  cursor: pointer;
+  display: none;
+}
+
+/****************************顶部样式***********************/
+/* line 23, ../sass/index.scss */
+.top {
+  height: 30px;
+  background: #999;
+}
+
+/****************************顶部主要内容***********************/
+/* line 32, ../sass/index.scss */
+.top .main {
+  width: 1190px;
+  background: #c21a27;
+  margin: auto;
+}
+
+/****************************顶部左边***********************/
+/* line 42, ../sass/index.scss */
+.top .main .left {
+  width: 58px;
+  height: 30px;
+  line-height: 30px;
+  float: left;
+}
+/* line 49, ../sass/index.scss */
+.top .main .province {
+  color: #fff;
+  font-size: 12px;
+  display: inline-block;
+  line-height: 30px;
+}
+/* line 56, ../sass/index.scss */
+.top .main .iconfont {
+  float: left;
+}
+
+/****************************顶部右边***********************/
+/* line 65, ../sass/index.scss */
+.top .main .right {
+  float: right;
+  line-height: 30px;
+  font-size: 12px;
+}
+/* line 71, ../sass/index.scss */
+.top .main li {
+  float: left;
+  margin-right: 8px;
+  padding: 0 7px;
+  font-size: 12px;
+}
+/* line 78, ../sass/index.scss */
+.top .main li a {
+  height: 28px;
+  line-height: 28px;
+  color: #fff;
+  text-decoration: none;
+}
+/* line 86, ../sass/index.scss */
+.top .main li .free {
+  color: #c21a27;
+}
+/* line 90, ../sass/index.scss */
+.top .main li span {
+  display: inline-block;
+  margin: 11px 5px 0;
+  overflow: hidden;
+  width: 1px;
+  height: 10px;
+  background: #999;
+}
+
+/****************************头部样式***********************/
+/* line 101, ../sass/index.scss */
+#header {
+  width: 1190px;
+  height: 141px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/****************************头部-主要内容***********************/
+/* line 111, ../sass/index.scss */
+#header .logo {
+  width: 190px;
+  height: 120px;
+  margin-top: 10px;
+}
+/* line 117, ../sass/index.scss */
+#header center {
+  width: 760px;
+  height: 100%;
+  background: #990397;
+  display: flex;
+  justify-content: space-between;
+}
+/* line 127, ../sass/index.scss */
+#header .pictrue {
+  width: 190px;
+  height: 120px;
+  margin-top: 10px;
+  background: #e1251b;
+}
+
+/****************************头部-中间部分***********************/
+/* line 138, ../sass/index.scss */
+#header .center .search {
+  width: 550px;
+  height: 36px;
+  position: absolute;
+  left: 500px;
+  top: 48px;
+  border: 2px solid #e2231a;
+  background: #fff;
+}
+/* line 148, ../sass/index.scss */
+#header .center .cart {
+  width: 130px;
+  height: 34px;
+  position: absolute;
+  right: 450px;
+  top: 50px;
+  border: 1px solid #000;
+  background-color: #fff;
+  text-align: center;
+  line-height: 34px;
+  border-color: #eee;
+  color: #f00;
+  font-size: 12px;
+}
+/* line 162, ../sass/index.scss */
+#header .center ul {
+  display: flex;
+}
+
+/****************************头部-中间-主要内容***********************/
+/* line 174, ../sass/index.scss */
+#header .center .search input {
+  left: 0;
+  padding: 2px 44px 2px 17px;
+  width: 425px;
+  height: 26px;
+  border: 1px solid transparent;
+  line-height: 26px;
+  font-size: 12px;
+}
+/* line 184, ../sass/index.scss */
+#header .center .search button {
+  display: block;
+  float: right;
+  width: 58px;
+  height: 36px;
+  background-color: #e1251b;
+  border: none;
+}
+
+/* line 200, ../sass/index.scss */
+#header .search button .iconfont {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 32px;
+}
+
+/* line 212, ../sass/index.scss */
+#header center ul li {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  color: #990397;
+}
+
+/****************************第一部分样式***********************/
+/* line 227, ../sass/index.scss */
+.section_1 {
+  background: #c21a27;
+  height: 480px;
+}
+
+/****************************第二部分样式***********************/
+/* line 234, ../sass/index.scss */
+.section_2 {
+  background: #999;
+  height: 260px;
+}
+
+/****************************第三部分样式***********************/
+/* line 241, ../sass/index.scss */
+.section_3 {
+  background: #990397;
+  height: 470px;
+}
+
+/****************************第四部分样式***********************/
+/* line 248, ../sass/index.scss */
+.section_4 {
+  background: #c21a27;
+}
+
+/****************************第五部分样式***********************/
+/* line 254, ../sass/index.scss */
+.section_5 {
+  background: #999;
+}
+
+/****************************第六部分样式***********************/
+/* line 260, ../sass/index.scss */
+.section_6 {
+  background: #990397;
+}
+
+/****************************第七部分样式***********************/
+/* line 266, ../sass/index.scss */
+.section_7 {
+  background: #c21a27;
+}
+
+/****************************第八部分样式***********************/
+/* line 272, ../sass/index.scss */
+.section_8 {
+  background: #999;
+}
+
+/****************************第九部分样式***********************/
+/* line 278, ../sass/index.scss */
+.section_9 {
+  background: #990397;
+}
+
+/****************************第十部分样式***********************/
+/* line 284, ../sass/index.scss */
+.section_10 {
+  background: #999;
+}
+
+/****************************脚注样式***********************/
+/* line 290, ../sass/index.scss */
+#footer {
+  background: #c21a27;
+}

@@ -1,15 +1,27 @@
 @charset "UTF-8";
 /************************常用变量********************************/
 /****************************公共样式***********************/
-/* line 8, ../sass/index.scss */
-.ad, .top, #header, .section_1, .section_2, .section_3, .section_4, .section_5, .section_6, .section_7, .section_8, .section_9, .section_10, #footer {
+/* line 9, ../sass/index.scss */
+.ad, .top, #header .header, .section_1, .section_3, .section_4, .section_5, .section_6, .section_7, .section_8, .section_9, .section_10, #footer {
   width: 100%;
   height: 80px;
-  margin: 0 auto;
+}
+
+/* line 14, ../sass/index.scss */
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #f4f4f4;
+}
+
+/* line 21, ../sass/index.scss */
+a {
+  text-decoration: none;
 }
 
 /****************************顶部广告样式***********************/
-/* line 15, ../sass/index.scss */
+/* line 26, ../sass/index.scss */
 .ad {
   background: #c21a27;
   cursor: pointer;
@@ -17,141 +29,116 @@
 }
 
 /****************************顶部样式***********************/
-/* line 23, ../sass/index.scss */
+/* line 34, ../sass/index.scss */
 .top {
   height: 30px;
-  background: #999;
+  background: #e3e4e5;
+  display: flex;
+  justify-content: center;
 }
-
-/****************************顶部主要内容***********************/
-/* line 32, ../sass/index.scss */
+/* line 41, ../sass/index.scss */
 .top .main {
   width: 1190px;
-  background: #c21a27;
-  margin: auto;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
 }
-
-/****************************顶部左边***********************/
-/* line 42, ../sass/index.scss */
+/* line 47, ../sass/index.scss */
 .top .main .left {
-  width: 58px;
-  height: 30px;
-  line-height: 30px;
-  float: left;
+  display: flex;
+  align-items: center;
 }
-/* line 49, ../sass/index.scss */
-.top .main .province {
-  color: #fff;
+/* line 51, ../sass/index.scss */
+.top .main .left .province {
+  color: #999;
   font-size: 12px;
-  display: inline-block;
-  line-height: 30px;
 }
 /* line 56, ../sass/index.scss */
-.top .main .iconfont {
-  float: left;
-}
-
-/****************************顶部右边***********************/
-/* line 65, ../sass/index.scss */
-.top .main .right {
-  float: right;
-  line-height: 30px;
-  font-size: 12px;
-}
-/* line 71, ../sass/index.scss */
-.top .main li {
-  float: left;
-  margin-right: 8px;
-  padding: 0 7px;
-  font-size: 12px;
-}
-/* line 78, ../sass/index.scss */
-.top .main li a {
-  height: 28px;
-  line-height: 28px;
-  color: #fff;
-  text-decoration: none;
-}
-/* line 86, ../sass/index.scss */
-.top .main li .free {
+.top .main .left .iconfont {
   color: #c21a27;
 }
-/* line 90, ../sass/index.scss */
-.top .main li span {
-  display: inline-block;
-  margin: 11px 5px 0;
-  overflow: hidden;
-  width: 1px;
-  height: 10px;
-  background: #999;
+/* line 61, ../sass/index.scss */
+.top .main .right {
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  color: #999;
+}
+/* line 67, ../sass/index.scss */
+.top .main .right a {
+  color: inherit;
+  text-decoration: none;
+  padding: 0 7px;
+}
+/* line 72, ../sass/index.scss */
+.top .main .right a:hover {
+  color: #c21a27;
+}
+/* line 76, ../sass/index.scss */
+.top .main .right a .iconfont {
+  font-size: 12px;
+}
+/* line 81, ../sass/index.scss */
+.top .main .right .hello {
+  margin-right: 7px;
+}
+/* line 85, ../sass/index.scss */
+.top .main .right .free {
+  color: #c21a27;
+}
+/* line 89, ../sass/index.scss */
+.top .main .right span {
+  margin: 0 7px;
 }
 
 /****************************头部样式***********************/
-/* line 101, ../sass/index.scss */
+/* line 97, ../sass/index.scss */
 #header {
+  width: 100%;
+  background: #fff;
+  border-bottom: 1px solid #ddd;
+}
+/* line 101, ../sass/index.scss */
+#header .header {
   width: 1190px;
   height: 141px;
-  display: flex;
-  justify-content: space-between;
+  position: relative;
+  margin: 0 auto;
 }
-
-/****************************头部-主要内容***********************/
-/* line 111, ../sass/index.scss */
-#header .logo {
+/* line 108, ../sass/index.scss */
+#header .header .logo {
   width: 190px;
   height: 120px;
-  margin-top: 10px;
-}
-/* line 117, ../sass/index.scss */
-#header center {
-  width: 760px;
-  height: 100%;
-  background: #990397;
-  display: flex;
-  justify-content: space-between;
-}
-/* line 127, ../sass/index.scss */
-#header .pictrue {
-  width: 190px;
-  height: 120px;
-  margin-top: 10px;
-  background: #e1251b;
-}
-
-/****************************头部-中间部分***********************/
-/* line 138, ../sass/index.scss */
-#header .center .search {
-  width: 550px;
-  height: 36px;
   position: absolute;
-  left: 500px;
-  top: 48px;
+  top: 10px;
+}
+/* line 115, ../sass/index.scss */
+#header .header .pictrue {
+  width: 190px;
+  height: 120px;
+  position: absolute;
+  bottom: 10px;
+  right: 0;
+  background: url(../images/48b1a7b2af63b1e7.png.webp);
+}
+/* line 125, ../sass/index.scss */
+#header .header #search .search-m {
+  position: relative;
+  z-index: 1;
+  height: 60px;
+}
+/* line 130, ../sass/index.scss */
+#header .header #search .search-m .form {
+  position: absolute;
+  left: 260px;
+  top: 25px;
+  width: 546px;
+  height: 32px;
   border: 2px solid #e2231a;
   background: #fff;
 }
-/* line 148, ../sass/index.scss */
-#header .center .cart {
-  width: 130px;
-  height: 34px;
-  position: absolute;
-  right: 450px;
-  top: 50px;
-  border: 1px solid #000;
-  background-color: #fff;
-  text-align: center;
-  line-height: 34px;
-  border-color: #eee;
-  color: #f00;
-  font-size: 12px;
-}
-/* line 162, ../sass/index.scss */
-#header .center ul {
-  display: flex;
-}
-
-/****************************头部-中间-主要内容***********************/
-/* line 174, ../sass/index.scss */
-#header .center .search input {
+/* line 139, ../sass/index.scss */
+#header .header #search .search-m .form .search_bg {
   left: 0;
   padding: 2px 44px 2px 17px;
   width: 425px;
@@ -160,97 +147,313 @@
   line-height: 26px;
   font-size: 12px;
 }
-/* line 184, ../sass/index.scss */
-#header .center .search button {
-  display: block;
-  float: right;
-  width: 58px;
-  height: 36px;
-  background-color: #e1251b;
-  border: none;
+/* line 149, ../sass/index.scss */
+#header .header #search .search-m .form .text {
+  left: 0;
+  padding: 2px 44px 2px 17px;
+  width: 425px;
+  height: 26px;
+  border: 1px solid transparent;
+  line-height: 26px;
+  font-size: 12px;
+  position: absolute;
+  top: 0;
+  outline: none;
 }
-
-/* line 200, ../sass/index.scss */
-#header .search button .iconfont {
-  color: #fff;
+/* line 162, ../sass/index.scss */
+#header .header #search .search-m .form .button {
+  border-radius: 0;
+  right: 0;
+  width: 58px;
+  height: 32px;
+  line-height: 32px;
+  border: none;
+  background-color: #e1251b;
   font-size: 20px;
   font-weight: 700;
-  line-height: 32px;
+  color: #fff;
+  -webkit-transition: background .2s ease;
+  transition: background .2s ease;
+  position: absolute;
+  top: 0;
+  outline: none;
 }
-
-/* line 212, ../sass/index.scss */
-#header center ul li {
-  display: flex;
-  justify-content: space-between;
+/* line 181, ../sass/index.scss */
+#header .header #search .search-m #settleup {
+  position: absolute;
+  right: 230px;
+  top: 25px;
+  z-index: 21;
+}
+/* line 187, ../sass/index.scss */
+#header .header #search .search-m #settleup .cw-icon {
+  width: 130px;
+  height: 34px;
+  background-color: #fff;
+  text-align: center;
+  line-height: 34px;
+  border-color: #eee;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+  float: left;
+  border: 1px solid #e3e4e5;
+}
+/* line 200, ../sass/index.scss */
+#header .header #search .search-m #settleup .cw-icon .iconfont {
+  color: #e1251b;
+  -webkit-transition: color .2s ease;
+  transition: color .2s ease;
+  margin-right: 13px;
+  font-size: 16px;
+}
+/* line 208, ../sass/index.scss */
+#header .header #search .search-m #settleup .cw-icon a {
+  color: #e1251b;
+  -webkit-transition: color .2s ease;
+  transition: color .2s ease;
+}
+/* line 214, ../sass/index.scss */
+#header .header #search .search-m #settleup .cw-icon .ci-count {
+  position: absolute;
+  top: 1px;
+  left: 29px;
+  right: auto;
+  display: inline-block;
+  padding: 1px 3px;
   font-size: 12px;
-  color: #990397;
+  line-height: 12px;
+  color: #fff;
+  background-color: #e1251b;
+  border-radius: 7px;
+  min-width: 12px;
+  text-align: center;
+}
+/* line 234, ../sass/index.scss */
+#header .header #hotwords {
+  overflow: hidden;
+  position: absolute;
+  left: 260px;
+  top: 65px;
+  width: 550px;
+  height: 20px;
+  line-height: 20px;
+}
+/* line 243, ../sass/index.scss */
+#header .header #hotwords .style-red {
+  color: #e1251b;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+/* line 250, ../sass/index.scss */
+#header .header #hotwords a {
+  float: left;
+  margin-right: 10px;
+  white-space: nowrap;
+  color: #999;
+  font-size: 12px;
+  text-decoration: none;
+}
+/* line 260, ../sass/index.scss */
+#header .header #navitems {
+  overflow: hidden;
+  position: absolute;
+  left: 203px;
+  bottom: 0;
+  height: 40px;
+  padding-top: 20px;
+}
+/* line 268, ../sass/index.scss */
+#header .header #navitems ul {
+  float: left;
+}
+/* line 271, ../sass/index.scss */
+#header .header #navitems ul li {
+  float: left;
+}
+/* line 274, ../sass/index.scss */
+#header .header #navitems ul li a {
+  position: relative;
+  display: block;
+  height: 40px;
+  line-height: 40px;
+  font-size: 15px;
+  color: #333;
+  margin: 0 11px;
+  -webkit-transition: color .2s ease;
+  transition: color .2s ease;
 }
 
 /****************************第一部分样式***********************/
-/* line 227, ../sass/index.scss */
+/* line 293, ../sass/index.scss */
 .section_1 {
-  background: #c21a27;
   height: 480px;
+}
+/* line 296, ../sass/index.scss */
+.section_1 .content {
+  background: #f4f4f4;
+  width: 1190px;
+  margin: 0 auto;
+  overflow: hidden;
+  height: 100%;
+}
+/* line 302, ../sass/index.scss */
+.section_1 .content .wrap {
+  width: 190px;
+  margin-right: 10px;
+  float: left;
+  height: 100%;
+}
+/* line 307, ../sass/index.scss */
+.section_1 .content .wrap ul {
+  overflow: hidden;
+  padding: 10px 0;
+  height: 450px;
+  background-color: #fefefe;
+  color: #636363;
+  margin-top: 10px;
+}
+/* line 314, ../sass/index.scss */
+.section_1 .content .wrap ul .cate_menu_item {
+  overflow: hidden;
+  padding-left: 18px;
+  height: 27px;
+  line-height: 27px;
+  font-size: 14px;
+  -webkit-transition: background-color .2s ease;
+  transition: background-color .2s ease;
+}
+/* line 322, ../sass/index.scss */
+.section_1 .content .wrap ul .cate_menu_item .cate_menu_lk {
+  text-decoration: none;
+  color: #333;
+  float: left;
+}
+/* line 327, ../sass/index.scss */
+.section_1 .content .wrap ul .cate_menu_item .cate_menu_line {
+  padding: 0 2px;
+  font-size: 12px;
+  float: left;
+}
+/* line 334, ../sass/index.scss */
+.section_1 .content .wrap .cate_pop {
+  display: none;
+  position: absolute;
+  left: 191px;
+  top: 0;
+  width: 998px;
+  min-height: 468px;
+  border: 1px solid #f7f7f7;
+  background-color: #fff;
+  -webkit-box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3);
+  -webkit-transition: top .25s ease;
+  transition: top .25s ease;
+}
+/* line 349, ../sass/index.scss */
+.section_1 .content .banner {
+  width: 790px;
+  margin-right: 10px;
+  margin-top: 10px;
+  float: left;
+  height: calc(100% - 10px);
+  display: flex;
+  justify-content: space-between;
+}
+/* line 357, ../sass/index.scss */
+.section_1 .content .banner img {
+  width: 590px;
+  height: 100%;
+}
+/* line 361, ../sass/index.scss */
+.section_1 .content .banner .focus_change {
+  width: 190px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+/* line 367, ../sass/index.scss */
+.section_1 .content .banner .focus_change .images {
+  width: 100%;
+  height: 150px;
+}
+/* line 370, ../sass/index.scss */
+.section_1 .content .banner .focus_change .images img {
+  width: 100%;
+  height: 100%;
+}
+/* line 378, ../sass/index.scss */
+.section_1 .content .detail {
+  background: #e3e4e5;
+  float: right;
+  width: 190px;
+  z-index: 1;
+  height: calc(100% - 10px);
+  margin-top: 10px;
 }
 
 /****************************第二部分样式***********************/
-/* line 234, ../sass/index.scss */
+/* line 392, ../sass/index.scss */
 .section_2 {
+  width: 1190px;
   background: #999;
   height: 260px;
+  background: yellowgreen;
 }
 
 /****************************第三部分样式***********************/
-/* line 241, ../sass/index.scss */
+/* line 400, ../sass/index.scss */
 .section_3 {
   background: #990397;
   height: 470px;
 }
 
 /****************************第四部分样式***********************/
-/* line 248, ../sass/index.scss */
+/* line 407, ../sass/index.scss */
 .section_4 {
   background: #c21a27;
 }
 
 /****************************第五部分样式***********************/
-/* line 254, ../sass/index.scss */
+/* line 413, ../sass/index.scss */
 .section_5 {
   background: #999;
 }
 
 /****************************第六部分样式***********************/
-/* line 260, ../sass/index.scss */
+/* line 419, ../sass/index.scss */
 .section_6 {
   background: #990397;
 }
 
 /****************************第七部分样式***********************/
-/* line 266, ../sass/index.scss */
+/* line 425, ../sass/index.scss */
 .section_7 {
   background: #c21a27;
 }
 
 /****************************第八部分样式***********************/
-/* line 272, ../sass/index.scss */
+/* line 431, ../sass/index.scss */
 .section_8 {
   background: #999;
 }
 
 /****************************第九部分样式***********************/
-/* line 278, ../sass/index.scss */
+/* line 437, ../sass/index.scss */
 .section_9 {
   background: #990397;
 }
 
 /****************************第十部分样式***********************/
-/* line 284, ../sass/index.scss */
+/* line 443, ../sass/index.scss */
 .section_10 {
   background: #999;
 }
 
 /****************************脚注样式***********************/
-/* line 290, ../sass/index.scss */
+/* line 449, ../sass/index.scss */
 #footer {
   background: #c21a27;
 }

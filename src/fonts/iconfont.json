@@ -6,11 +6,67 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "992",
+      "name": "话费",
+      "font_class": "huafei",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "397544",
+      "name": "购物车",
+      "font_class": "icon22fuzhi",
+      "unicode": "e603",
+      "unicode_decimal": 58883
+    },
+    {
       "icon_id": "755541",
       "name": "放大镜",
       "font_class": "search",
       "unicode": "e623",
       "unicode_decimal": 58915
+    },
+    {
+      "icon_id": "797130",
+      "name": "国内机票统计",
+      "font_class": "guoneijipiaotongji",
+      "unicode": "e664",
+      "unicode_decimal": 58980
+    },
+    {
+      "icon_id": "1130589",
+      "name": "酒店",
+      "font_class": "jiudian",
+      "unicode": "e60a",
+      "unicode_decimal": 58890
+    },
+    {
+      "icon_id": "1263352",
+      "name": "机票",
+      "font_class": "jipiao",
+      "unicode": "e63b",
+      "unicode_decimal": 58939
+    },
+    {
+      "icon_id": "1284131",
+      "name": "火车票",
+      "font_class": "huochepiao",
+      "unicode": "e638",
+      "unicode_decimal": 58936
+    },
+    {
+      "icon_id": "1505560",
+      "name": "游戏",
+      "font_class": "youxi",
+      "unicode": "e604",
+      "unicode_decimal": 58884
+    },
+    {
+      "icon_id": "2803733",
+      "name": "理财",
+      "font_class": "licai",
+      "unicode": "e6aa",
+      "unicode_decimal": 59050
     },
     {
       "icon_id": "5315185",
@@ -20,11 +76,60 @@
       "unicode_decimal": 59085
     },
     {
+      "icon_id": "6119636",
+      "name": "京东-企业购-e01121",
+      "font_class": "qiyegou-e",
+      "unicode": "e61d",
+      "unicode_decimal": 58909
+    },
+    {
+      "icon_id": "6460209",
+      "name": "京东众筹",
+      "font_class": "jingdongzhongchou",
+      "unicode": "e615",
+      "unicode_decimal": 58901
+    },
+    {
+      "icon_id": "6460218",
+      "name": "电影票",
+      "font_class": "dianyingpiao",
+      "unicode": "e61c",
+      "unicode_decimal": 58908
+    },
+    {
+      "icon_id": "6460246",
+      "name": "白条闪付",
+      "font_class": "baitiaoshanfu",
+      "unicode": "e632",
+      "unicode_decimal": 58930
+    },
+    {
+      "icon_id": "6788585",
+      "name": "礼品卡",
+      "font_class": "lipinqia",
+      "unicode": "e639",
+      "unicode_decimal": 58937
+    },
+    {
+      "icon_id": "7064841",
+      "name": "秒杀",
+      "font_class": "miaosha",
+      "unicode": "e67d",
+      "unicode_decimal": 59005
+    },
+    {
       "icon_id": "8103434",
       "name": "位置",
       "font_class": "danseshixintubiao-",
       "unicode": "e635",
       "unicode_decimal": 58933
+    },
+    {
+      "icon_id": "12306464",
+      "name": "水滴",
+      "font_class": "shuidi",
+      "unicode": "e682",
+      "unicode_decimal": 59010
     }
   ]
 }

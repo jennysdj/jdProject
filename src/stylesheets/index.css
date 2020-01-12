@@ -2,7 +2,7 @@
 /************************常用变量********************************/
 /****************************公共样式***********************/
 /* line 9, ../sass/index.scss */
-.ad, .top, #header .header, .section_1, .section_3, .section_4, .section_5, .section_6, .section_7, .section_8, .section_9, .section_10, #footer {
+.ad, .top, #header .header, .section_1, .section_1 .bg, .section_3, .section_4, .section_5, .section_6, .section_7, .section_8, .section_9, .section_10, #footer {
   width: 100%;
   height: 80px;
 }
@@ -288,9 +288,18 @@ a {
 /****************************第一部分样式***********************/
 /* line 293, ../sass/index.scss */
 .section_1 {
+  width: 100%;
   height: 480px;
+  position: relative;
 }
-/* line 296, ../sass/index.scss */
+/* line 298, ../sass/index.scss */
+.section_1 .bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url(../images/31e19d93197249c1.png.webp) no-repeat center;
+}
+/* line 306, ../sass/index.scss */
 .section_1 .content {
   background: #f4f4f4;
   width: 1190px;
@@ -298,14 +307,14 @@ a {
   overflow: hidden;
   height: 100%;
 }
-/* line 302, ../sass/index.scss */
+/* line 312, ../sass/index.scss */
 .section_1 .content .wrap {
   width: 190px;
   margin-right: 10px;
   float: left;
   height: 100%;
 }
-/* line 307, ../sass/index.scss */
+/* line 317, ../sass/index.scss */
 .section_1 .content .wrap ul {
   overflow: hidden;
   padding: 10px 0;
@@ -314,7 +323,7 @@ a {
   color: #636363;
   margin-top: 10px;
 }
-/* line 314, ../sass/index.scss */
+/* line 324, ../sass/index.scss */
 .section_1 .content .wrap ul .cate_menu_item {
   overflow: hidden;
   padding-left: 18px;
@@ -324,19 +333,19 @@ a {
   -webkit-transition: background-color .2s ease;
   transition: background-color .2s ease;
 }
-/* line 322, ../sass/index.scss */
+/* line 332, ../sass/index.scss */
 .section_1 .content .wrap ul .cate_menu_item .cate_menu_lk {
   text-decoration: none;
   color: #333;
   float: left;
 }
-/* line 327, ../sass/index.scss */
+/* line 337, ../sass/index.scss */
 .section_1 .content .wrap ul .cate_menu_item .cate_menu_line {
   padding: 0 2px;
   font-size: 12px;
   float: left;
 }
-/* line 334, ../sass/index.scss */
+/* line 344, ../sass/index.scss */
 .section_1 .content .wrap .cate_pop {
   display: none;
   position: absolute;
@@ -351,7 +360,7 @@ a {
   -webkit-transition: top .25s ease;
   transition: top .25s ease;
 }
-/* line 349, ../sass/index.scss */
+/* line 359, ../sass/index.scss */
 .section_1 .content .banner {
   width: 790px;
   margin-right: 10px;
@@ -361,12 +370,12 @@ a {
   display: flex;
   justify-content: space-between;
 }
-/* line 357, ../sass/index.scss */
+/* line 367, ../sass/index.scss */
 .section_1 .content .banner img {
   width: 590px;
   height: 100%;
 }
-/* line 361, ../sass/index.scss */
+/* line 371, ../sass/index.scss */
 .section_1 .content .banner .focus_change {
   width: 190px;
   height: 100%;
@@ -374,86 +383,478 @@ a {
   flex-direction: column;
   justify-content: space-between;
 }
-/* line 367, ../sass/index.scss */
+/* line 377, ../sass/index.scss */
 .section_1 .content .banner .focus_change .images {
   width: 100%;
   height: 150px;
 }
-/* line 370, ../sass/index.scss */
+/* line 380, ../sass/index.scss */
 .section_1 .content .banner .focus_change .images img {
   width: 100%;
   height: 100%;
 }
-/* line 378, ../sass/index.scss */
+/* line 388, ../sass/index.scss */
 .section_1 .content .detail {
-  background: #e3e4e5;
+  background: #fff;
   float: right;
   width: 190px;
   z-index: 1;
   height: calc(100% - 10px);
   margin-top: 10px;
 }
+/* line 395, ../sass/index.scss */
+.section_1 .content .detail .first_part {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* line 399, ../sass/index.scss */
+.section_1 .content .detail .first_part .first_top {
+  width: 100%;
+  height: 77px;
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* line 407, ../sass/index.scss */
+.section_1 .content .detail .first_part .first_top img {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  margin-right: 10px;
+}
+/* line 413, ../sass/index.scss */
+.section_1 .content .detail .first_part .first_top .font {
+  display: flex;
+  flex-direction: column;
+}
+/* line 418, ../sass/index.scss */
+.section_1 .content .detail .first_part .first_top p {
+  margin-bottom: 5px;
+  color: #666;
+}
+/* line 424, ../sass/index.scss */
+.section_1 .content .detail .first_part .first_button {
+  width: 100%;
+  height: 25px;
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+}
+/* line 430, ../sass/index.scss */
+.section_1 .content .detail .first_part .first_button .new {
+  width: 75px;
+  height: 25px;
+  border-radius: 13px;
+  color: #fff;
+  margin: 0 5px;
+  background: #E1251B;
+}
+/* line 438, ../sass/index.scss */
+.section_1 .content .detail .first_part .first_button .member {
+  width: 75px;
+  height: 25px;
+  border-radius: 13px;
+  color: #E5D790;
+  margin: 0 5px;
+  background: #363634;
+}
+/* line 445, ../sass/index.scss */
+.section_1 .content .detail .first_part .first_button .member:hover {
+  background: #E1251B;
+  color: #fff;
+}
+/* line 451, ../sass/index.scss */
+.section_1 .content .detail .first_part .first_part::after {
+  position: absolute;
+  height: 1px;
+  left: 15px;
+  right: 15px;
+  background: linear-gradient(270deg, white, #eeeeee, #eeeeee, white);
+  content: " ";
+  bottom: 0;
+}
+/* line 461, ../sass/index.scss */
+.section_1 .content .detail .second_part {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 130px;
+}
+/* line 466, ../sass/index.scss */
+.section_1 .content .detail .second_part .second_top {
+  width: 100%;
+  height: 20px;
+  margin-bottom: 8px;
+  padding-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+/* line 473, ../sass/index.scss */
+.section_1 .content .detail .second_part .second_top h3 {
+  width: 56px;
+  height: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  color: #333;
+  margin-left: 15px;
+  line-height: 20px;
+}
+/* line 482, ../sass/index.scss */
+.section_1 .content .detail .second_part .second_top p {
+  width: 40px;
+  height: 21px;
+  color: #999;
+  font-size: 12px;
+  margin-right: 15px;
+  line-height: 21px;
+}
+/* line 491, ../sass/index.scss */
+.section_1 .content .detail .second_part ul {
+  width: 160px;
+  height: 88px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 12px;
+}
+/* line 499, ../sass/index.scss */
+.section_1 .content .detail .second_part ul li {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 16px;
+  margin-bottom: 6px;
+}
+/* line 505, ../sass/index.scss */
+.section_1 .content .detail .second_part ul li a {
+  width: 35px;
+  height: 100%;
+  color: #E1251B;
+  margin-right: 6px;
+  background: rgba(225, 37, 27, 0.08);
+  line-height: 16px;
+  text-align: center;
+}
+/* line 515, ../sass/index.scss */
+.section_1 .content .detail .second_part ul li p {
+  width: 100%;
+  color: #666;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+/* line 526, ../sass/index.scss */
+.section_1 .content .detail .third_part {
+  width: 100%;
+  height: 240px;
+  font-size: 12px;
+  color: #666;
+  padding: 5px 0.5px;
+}
+/* line 532, ../sass/index.scss */
+.section_1 .content .detail .third_part li {
+  width: 63px;
+  height: 55px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  float: left;
+  cursor: pointer;
+}
+/* line 542, ../sass/index.scss */
+.section_1 .content .detail .third_part li .iconfont {
+  display: block;
+  width: 28px;
+  height: 28px;
+  font-size: 20px;
+  font-weight: 900;
+}
+/* line 549, ../sass/index.scss */
+.section_1 .content .detail .third_part li a {
+  display: block;
+  width: 100%;
+  height: 27px;
+  color: #333;
+}
 
 /****************************第二部分样式***********************/
-/* line 392, ../sass/index.scss */
+/* line 563, ../sass/index.scss */
 .section_2 {
   width: 1190px;
-  background: #999;
   height: 260px;
-  background: yellowgreen;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+/* line 570, ../sass/index.scss */
+.section_2 .sale {
+  width: 190px;
+  height: 100%;
+  background: url(../images/613f39ecb60e42dfec798a4ffc0bc012.png);
+  background-size: 100% 100%;
+  color: #fff;
+}
+/* line 576, ../sass/index.scss */
+.section_2 .sale .countdown-title {
+  width: 100%;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 700;
+  margin-top: 31px;
+}
+/* line 583, ../sass/index.scss */
+.section_2 .sale .countdown-desc {
+  margin-top: 110px;
+  font-size: 14px;
+  text-align: center;
+}
+/* line 587, ../sass/index.scss */
+.section_2 .sale .countdown-desc strong {
+  font-size: 18px;
+  padding-right: 2px;
+  vertical-align: middle;
+  display: inline-block;
+  margin-top: -1px;
+}
+/* line 595, ../sass/index.scss */
+.section_2 .sale .countdown-main {
+  margin-left: auto;
+  margin-right: auto;
+  width: 130px;
+  height: 30px;
+  margin-top: 10px;
+  display: block;
+  color: #333;
+  font-weight: 700;
+}
+/* line 604, ../sass/index.scss */
+.section_2 .sale .countdown-main .timmer__unit {
+  position: relative;
+  float: left;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  background-color: #2f3430;
+  margin-right: 0px;
+  color: white;
+  font-size: 20px;
+  line-height: 30px;
+}
+/* line 616, ../sass/index.scss */
+.section_2 .sale .countdown-main .timmer__unit--hour, .section_2 .sale .countdown-main .timmer__unit--minute {
+  margin-right: 20px;
+}
+/* line 618, ../sass/index.scss */
+.section_2 .sale .countdown-main .timmer__unit--hour::after, .section_2 .sale .countdown-main .timmer__unit--minute::after {
+  content: ":";
+  display: block;
+  position: absolute;
+  right: -20px;
+  font-weight: bolder;
+  font-size: 18px;
+  width: 20px;
+  height: 100%;
+  top: 0;
+}
+/* line 632, ../sass/index.scss */
+.section_2 .goods {
+  width: 800px;
+  height: 100%;
+  overflow: hidden;
+}
+/* line 636, ../sass/index.scss */
+.section_2 .goods ul {
+  width: 800px;
+  height: 100%;
+  display: flex;
+  background: #fff;
+  font-size: 12px;
+  font-weight: 400;
+  color: #333333;
+}
+/* line 645, ../sass/index.scss */
+.section_2 .goods .goods_list {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+/* line 651, ../sass/index.scss */
+.section_2 .goods .goods_list::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 1px;
+  height: 200px;
+  transform: translateY(-50%);
+  background: linear-gradient(180deg, white, #eeeeee, white);
+}
+/* line 662, ../sass/index.scss */
+.section_2 .goods .goods_list img {
+  width: 140px;
+  height: 140px;
+  margin-top: 30px;
+}
+/* line 667, ../sass/index.scss */
+.section_2 .goods .goods_list p {
+  width: 160px;
+  font-size: 12px;
+  margin-top: 13px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+/* line 675, ../sass/index.scss */
+.section_2 .goods .goods_list .price {
+  font-size: 14px;
+  width: 160px;
+  border: 1px solid #cf3a2b;
+  margin-top: 7px;
+  display: flex;
+}
+/* line 681, ../sass/index.scss */
+.section_2 .goods .goods_list .price .left {
+  width: 92px;
+  height: 22px;
+  background: #cf3a2b;
+  position: relative;
+  color: #fff;
+  line-height: 22px;
+}
+/* line 688, ../sass/index.scss */
+.section_2 .goods .goods_list .price .left::after {
+  content: '';
+  width: 0;
+  height: 0;
+  border: solid;
+  border-width: 11px 6px;
+  border-color: transparent #fff #fff transparent;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+/* line 700, ../sass/index.scss */
+.section_2 .goods .goods_list .price .right {
+  width: 68px;
+  height: 100%;
+  background: #fff;
+  color: #999;
+  line-height: 22px;
+  text-decoration: line-through;
+}
+/* line 712, ../sass/index.scss */
+.section_2 .pictrue {
+  width: 200px;
+  height: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  background: #fff;
+}
+/* line 718, ../sass/index.scss */
+.section_2 .pictrue .wrap {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/* line 725, ../sass/index.scss */
+.section_2 .pictrue .wrap img {
+  width: 120px;
+  height: 120px;
+}
+/* line 729, ../sass/index.scss */
+.section_2 .pictrue .wrap p {
+  font-size: 14px;
+  color: #666;
+  width: 180px;
+  height: 21px;
+  text-align: center;
+  margin-top: 4px;
+}
+/* line 737, ../sass/index.scss */
+.section_2 .pictrue .wrap h3 {
+  font-size: 14px;
+  color: #333;
+  width: 180px;
+  height: 21px;
+  text-align: center;
+}
+/* line 744, ../sass/index.scss */
+.section_2 .pictrue .wrap button {
+  font-size: 12px;
+  color: #E1251B;
+  width: 82px;
+  height: 24px;
+  border-radius: 14px;
+  line-height: 22px;
+  font-weight: 700;
+  border: 1px solid #e1251b;
+  margin-top: 4px;
+  padding-left: 4px;
 }
 
 /****************************第三部分样式***********************/
-/* line 400, ../sass/index.scss */
+/* line 760, ../sass/index.scss */
 .section_3 {
-  background: #990397;
-  height: 470px;
+  width: 1057px;
+  background-color: #f4f4f4;
+  height: 491px;
+  margin-top: 20px;
 }
 
 /****************************第四部分样式***********************/
-/* line 407, ../sass/index.scss */
+/* line 772, ../sass/index.scss */
 .section_4 {
   background: #c21a27;
 }
 
 /****************************第五部分样式***********************/
-/* line 413, ../sass/index.scss */
+/* line 778, ../sass/index.scss */
 .section_5 {
   background: #999;
 }
 
 /****************************第六部分样式***********************/
-/* line 419, ../sass/index.scss */
+/* line 784, ../sass/index.scss */
 .section_6 {
   background: #990397;
 }
 
 /****************************第七部分样式***********************/
-/* line 425, ../sass/index.scss */
+/* line 790, ../sass/index.scss */
 .section_7 {
   background: #c21a27;
 }
 
 /****************************第八部分样式***********************/
-/* line 431, ../sass/index.scss */
+/* line 796, ../sass/index.scss */
 .section_8 {
   background: #999;
 }
 
 /****************************第九部分样式***********************/
-/* line 437, ../sass/index.scss */
+/* line 802, ../sass/index.scss */
 .section_9 {
   background: #990397;
 }
 
 /****************************第十部分样式***********************/
-/* line 443, ../sass/index.scss */
+/* line 808, ../sass/index.scss */
 .section_10 {
   background: #999;
 }
 
 /****************************脚注样式***********************/
-/* line 449, ../sass/index.scss */
+/* line 814, ../sass/index.scss */
 #footer {
   background: #c21a27;
 }
